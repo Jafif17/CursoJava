@@ -140,7 +140,7 @@ public class Main{
 
             System.out.println("1.Registrar");
             System.out.println("2.Ver listado");
-            System.out.println("3.Buscar Docente");
+            System.out.println("3.Buscar Administrativo");
 
             op2 = entrada.nextInt();
 
@@ -175,7 +175,7 @@ public class Main{
                 fechaIngreso = ent3.nextLine();
               
 
-                Personal nuev = new Adminitrativo(numeroEmpleado, apPaterno, apMaterno, nombre, fechaNacimiento, fechaIngreso, sueldoBase, vales);
+                Personal nuev = new Administrativo(numeroEmpleado, apPaterno, apMaterno, nombre, fechaNacimiento, fechaIngreso, sueldoBase, vales);
                 listado.add(nuev);
 
                 break;
@@ -195,13 +195,13 @@ public class Main{
 
                 for(Personal i: listado){
 
-                    if(i instanceof Adminitrativo){
+                    if(i instanceof Administrativo){
 
-                    if(i.nombre == nom){
+                
                         i.calculaImpuestos();
                         i.muestraDatos();
                         i.calculaPagoNeto();
-                    }
+                    
 
                     }
 
