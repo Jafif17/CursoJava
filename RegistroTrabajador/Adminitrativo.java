@@ -24,6 +24,8 @@ public class Main{
         double vales;
         boolean bandera = true;
 
+        // este while es para ciclar el menú 
+
         while(bandera){
 
         System.out.println("Bievenido");
